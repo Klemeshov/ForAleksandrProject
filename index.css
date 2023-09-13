@@ -1,12 +1,158 @@
-.iner400 {
-    font-family: Inter, serif;
-    font-weight: 400;
+* {
+    margin: 0;
+    padding: 0;
+    outline: none;
+    color: black;
+    text-decoration: none;
 }
-.iner500 {
-    font-family: Inter, serif;
-    font-weight: 500;
+
+.rootContainer {
+    max-height: 2000px;
 }
-.iner600 {
+
+.content {
+    max-width: 1160px;
+    margin: 0 auto;
+}
+
+.redButton {
     font-family: Inter, serif;
+    font-size: 22px;
+    font-style: normal;
     font-weight: 600;
+    line-height: normal;
+    color: #FFFFFF;
+    padding: 20px 48px;
+    background-color: #EE3F58;
+    border-radius: 12px;
+}
+
+.redButton:active {
+    background-color: #e2394f;
+}
+
+.header__content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 12px 7px;
+}
+
+.header__logo {
+    display: flex;
+    color: #098DC8;
+    cursor: default;
+}
+
+.header__logoFont {
+    font-family: Inter, serif;
+    font-size: 28px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    text-transform: lowercase;
+}
+
+.wordСard {
+    color: #098DC8;
+}
+
+.wordSon {
+    color: #EE3F58;
+}
+
+.header__nav {
+    display: flex;
+    gap: 60px;
+}
+
+.header__link {
+    font-family: Inter, serif;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    color: #051822;
+    padding-bottom: 1px;
+}
+
+.header__link:hover {
+    border-bottom: 1px solid #051822;
+    padding-bottom: 0;
+}
+
+.header__registrationButton {
+    font-family: Inter, serif;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal;
+    color: #EE3F58;
+    padding: 12px 43px;
+    border: 1px solid #EE3F58;
+    border-radius: 42px;
+    margin: 12px 0;
+}
+
+.header__registrationButton:hover {
+    background-color: rgba(238, 63, 88, 0.2);
+}
+
+.mainPage__content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.mainPage__title {
+    width: 658px;
+    margin-top: 132px;
+
+    text-align: center;
+    font-family: Inter, serif;
+    font-size: 84px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 90px;
+    color: #051822;
+}
+
+.mainPage__description {
+    width: 450px;
+    margin-top: 30px;
+
+    font-family: Inter, serif;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 135%;
+    color: #8A8A8A;
+    text-align: center;
+}
+
+.mainPage__button {
+    margin-top: 60px;
+}
+
+.mainPage__videLink {
+    margin-top: 15px;
+    text-align: center;
+    font-family: Inter, serif;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    text-decoration-line: underline;
+    color: #098DC8;
+}
+
+.mainPage__circle {
+    position: absolute;
+    height: 50vw;
+    width: 50vw;
+    background-color: #26B0ED;
+    border-radius: 50%;
+    top: 800px;
+    left: calc(50% - 25vw);
+    z-index: -1;
 }
