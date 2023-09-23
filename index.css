@@ -8,8 +8,8 @@
 }
 
 .rootContainer {
-    margin-top: 24px;
     overflow: hidden;
+    margin-top: 24px;
 }
 
 .content {
@@ -33,11 +33,14 @@
 }
 
 .header {
+    position: sticky;
+    top: 24px;
     max-width: 1160px;
     background-color: #F5F6F7;
     margin: 0 auto;
     padding: 12px 24px;
     border-radius: 12px;
+    z-index: 10000;
 }
 
 .header__content {
