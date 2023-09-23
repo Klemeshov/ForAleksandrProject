@@ -8,6 +8,7 @@
 }
 
 .rootContainer {
+    margin-top: 24px;
     overflow: hidden;
 }
 
@@ -27,15 +28,22 @@
     border-radius: 12px;
 }
 
-.redButton:active {
-    background-color: #e2394f;
+.redButton:hover {
+    background-color: #BA3145;
+}
+
+.header {
+    max-width: 1160px;
+    background-color: #F5F6F7;
+    margin: 0 auto;
+    padding: 12px 24px;
+    border-radius: 12px;
 }
 
 .header__content {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    margin: 12px 7px;
 }
 
 .header__logo {
@@ -88,7 +96,6 @@
     padding: 12px 43px;
     border: 1px solid #EE3F58;
     border-radius: 42px;
-    margin: 12px 0;
 }
 
 .header__registrationButton:hover {
@@ -445,18 +452,21 @@
     height: 195px;
     bottom: 0;
     right: 0;
+    border-radius: 8px;
 }
 
 .secondPage__card2Icon2 {
     height: 195px;
     top: -26px;
     left: 78px;
+    border-radius: 8px;
 }
 
 .secondPage__card2Icon3 {
     height: 195px;
     bottom: 0;
     left: 0;
+    border-radius: 8px;
 }
 
 .secondPage__card3Icon1 {
