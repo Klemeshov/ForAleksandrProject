@@ -8,7 +8,7 @@
 }
 
 .rootContainer {
-    overflow-x: hidden;
+    overflow: hidden;
 }
 
 .content {
