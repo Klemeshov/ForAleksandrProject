@@ -4,6 +4,7 @@
     outline: none;
     color: black;
     text-decoration: none;
+    font-family: Inter, serif;
 }
 
 .rootContainer {
@@ -16,7 +17,6 @@
 }
 
 .redButton {
-    font-family: Inter, serif;
     font-size: 22px;
     font-style: normal;
     font-weight: 600;
@@ -45,7 +45,6 @@
 }
 
 .header__logoFont {
-    font-family: Inter, serif;
     font-size: 28px;
     font-style: normal;
     font-weight: 700;
@@ -67,7 +66,6 @@
 }
 
 .header__link {
-    font-family: Inter, serif;
     font-size: 14px;
     font-style: normal;
     font-weight: 400;
@@ -82,7 +80,6 @@
 }
 
 .header__registrationButton {
-    font-family: Inter, serif;
     font-size: 16px;
     font-style: normal;
     font-weight: 600;
@@ -98,6 +95,10 @@
     background-color: rgba(238, 63, 88, 0.2);
 }
 
+.mainPage {
+    position: relative;
+}
+
 .mainPage__content {
     display: flex;
     flex-direction: column;
@@ -109,7 +110,6 @@
     margin-top: 132px;
 
     text-align: center;
-    font-family: Inter, serif;
     font-size: 84px;
     font-style: normal;
     font-weight: 600;
@@ -121,7 +121,6 @@
     width: 450px;
     margin-top: 30px;
 
-    font-family: Inter, serif;
     font-size: 18px;
     font-style: normal;
     font-weight: 400;
@@ -137,7 +136,6 @@
 .mainPage__videLink {
     margin-top: 15px;
     text-align: center;
-    font-family: Inter, serif;
     font-size: 20px;
     font-style: normal;
     font-weight: 400;
@@ -154,5 +152,149 @@
     border-radius: 50%;
     top: 800px;
     left: calc(50% - 25vw);
-    z-index: -1;
+    z-index: -1000;
+}
+
+.card {
+    position: absolute;
+    width: 170px;
+    height: 220px;
+    box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.10);
+    border-radius: 12px;
+    z-index: -100;
+}
+
+.card__imageContainer {
+    position: absolute;
+    width: 170px;
+    height: 153px;
+
+    border-radius: 12px 12px 0 0;
+    opacity: 0.35;
+    background: linear-gradient(180deg, rgba(0, 0, 0, 0.00) 0%, #000 100%);
+    mix-blend-mode: multiply;
+}
+
+.card__image {
+    width: 170px;
+    height: 153px;
+
+    border-radius: 12px 12px 0 0;
+    object-fit: cover;
+}
+
+.card__nameContainer {
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    top: 111px;
+    left: 12px;
+}
+
+.card__name {
+    font-size: 12px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    color: #FFF;
+}
+
+.card__salaryContainer {
+    padding: 12px;
+    display: flex;
+    flex-direction: column;
+}
+
+.card__salaryLabel {
+    font-size: 12px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    color: #051822;
+}
+
+.card__salary {
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    color: #051822;
+}
+
+.mainPage__card1 {
+    transform: rotate(-10deg);
+    left: 10vw;
+    top: 75px;
+}
+
+.mainPage__card2 {
+    transform: rotate(-10deg);
+    left: 20vw;
+    top: 500px;
+}
+
+.mainPage__card3 {
+    transform: rotate(10deg);
+    right: 10vw;
+    top: 75px;
+}
+
+.mainPage__card4 {
+    transform: rotate(10deg);
+    right: 20vw;
+    top: 500px;
+}
+
+.icon {
+    position: absolute;
+    width: 53px;
+    height: 53px;
+    z-index: -100;
+}
+.icon_img {
+    width: 53px;
+    height: 53px;
+    border-radius: 53px;
+}
+
+.mainPage__icon1 {
+    top: 175px;
+    left: 25vw;
+}
+
+.mainPage__icon2 {
+    top: 400px;
+    left: 15vw;
+}
+
+.mainPage__icon3 {
+    top: 300px;
+    right: 25vw;
+}
+
+.mainPage__icon4 {
+    top: 420px;
+    right: 20vw;
+}
+
+.sticker {
+    position: absolute;
+    z-index: -100;
+}
+
+.mainPage__sticker1 {
+    top: 300px;
+    left: 25vw;
+    transform: rotate(-10deg);
+}
+
+.mainPage__sticker2 {
+    top: 60px;
+    right: 25vw;
+    transform: rotate(10deg);
+}
+
+.cards {
+    position: absolute;
+    width: 100vw;
 }
