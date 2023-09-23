@@ -8,7 +8,7 @@
 }
 
 .rootContainer {
-    max-height: 2000px;
+    overflow-x: hidden;
 }
 
 .content {
@@ -117,6 +117,14 @@
     color: #051822;
 }
 
+.mainPage__titleLastWord {
+    margin: 0;
+    border-radius: 1000px;
+    border: 4px dashed #78D137;
+    width: 297px;
+    padding: 6px 32px 16px 32px;
+}
+
 .mainPage__description {
     width: 450px;
     margin-top: 30px;
@@ -150,9 +158,9 @@
     width: 50vw;
     background-color: #26B0ED;
     border-radius: 50%;
-    top: 800px;
+    top: 734px;
     left: calc(50% - 25vw);
-    z-index: -1000;
+    z-index: 1;
 }
 
 .card {
@@ -251,6 +259,7 @@
     height: 53px;
     z-index: -100;
 }
+
 .icon_img {
     width: 53px;
     height: 53px;
@@ -297,4 +306,238 @@
 .cards {
     position: absolute;
     width: 100vw;
+    z-index: -100;
+}
+
+.mainPage__window {
+    position: relative;
+    top: 66px;
+    width: 760px;
+    height: 516px;
+    margin-top: 66px;
+    border-radius: 12px;
+    box-shadow: 0 10px 40px 0 rgba(0, 0, 0, 0.15);
+    z-index: 10;
+}
+
+.secondPage {
+    position: relative;
+    background-color: #26B0ED;
+    z-index: 100;
+}
+
+.secondPage__title {
+    font-size: 52px;
+    font-weight: 600;
+    color: #FFF;
+    padding-top: 96px;
+    text-align: center;
+}
+
+.wrappedText {
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.wrappedText__wrapper {
+    position: absolute;
+    transform: rotate(-0.9deg);
+    width: inherit;
+    height: inherit;
+    border-radius: 1000px;
+    background: #D0FF14;
+    z-index: -1;
+}
+
+.wrappedText__title {
+    font-size: inherit;
+    font-weight: inherit;
+    color: #051822;
+    text-align: center;
+}
+
+.secondPage__subtitle {
+    font-size: 52px;
+    font-weight: 600;
+    width: 553px;
+    height: 87px;
+    margin: 16px auto 64px auto;
+}
+
+.secondPage__cardsContainer {
+    display: flex;
+    gap: 40px;
+}
+
+.secondPage__card {
+    padding: 32px;
+    border-radius: 24px;
+    background-color: #FFF;
+    height: 396px;
+    width: 296px;
+
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+}
+
+.secondPage__cardTitle {
+    color: #051822;
+    font-size: 20px;
+    font-weight: 600;
+    line-height: 27px;
+}
+
+.secondPage__cardNumber {
+    color: #051822;
+    font-size: 64px;
+    font-weight: 600;
+}
+
+.secondPage__cardDesc {
+    color: #051822;
+    font-size: 20px;
+    font-weight: 600;
+    line-height: 27px;
+    max-width: 220px;
+}
+
+.secondPage__cardImageContainer {
+    position: relative;
+    width: 300px;
+    height: 200px;
+    margin-top: auto;
+}
+
+
+.secondPage__icon {
+    position: absolute;
+    box-shadow: 0 4px 10px 0 rgba(0, 0, 0, 0.35);
+}
+
+.secondPage__card1Icon1 {
+    border-radius: 145px;
+    width: 145px;
+    height: 145px;
+    top: -17px;
+    right: 9px;
+}
+
+.secondPage__card1Icon2 {
+    border-radius: 145px;
+    width: 116px;
+    height: 116px;
+    bottom: 14px;
+    left: 67px;
+}
+
+.secondPage__card1Icon3 {
+    border-radius: 145px;
+    width: 79px;
+    height: 79px;
+    top: 49px;
+    left: 11px;
+}
+
+.secondPage__card2Icon1 {
+    height: 195px;
+    bottom: 0;
+    right: 0;
+}
+
+.secondPage__card2Icon2 {
+    height: 195px;
+    top: -26px;
+    left: 78px;
+}
+
+.secondPage__card2Icon3 {
+    height: 195px;
+    bottom: 0;
+    left: 0;
+}
+
+.secondPage__card3Icon1 {
+    border-radius: 8px;
+    width: 185px;
+    bottom: -8px;
+    right: 5px;
+}
+
+.secondPage__card3Icon2 {
+    border-radius: 8px;
+    width: 185px;
+    top: -35px;
+    left: 5px;
+}
+
+.secondPage__bottomFrame {
+    margin-top: 40px;
+    width: 100%;
+    height: 137px;
+    padding: 48px 32px;
+    background-color: #FFF;
+    border-radius: 24px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.secondPage__bottomFrameLeftBlock {
+    max-width: 533px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.secondPage__bottomFrameTitle {
+    font-size: 32px;
+    font-weight: 500;
+    line-height: 40px;
+}
+
+.secondPage__bottomFrameDesc {
+    width: 460px;
+    height: 52px;
+    font-size: 32px;
+    font-weight: 500;
+    line-height: 40px;
+    z-index: 1;
+    left: -13px;
+}
+
+.secondPage__bottomFrameRightBlock {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+}
+
+.secondPage__bottomFrameButton {
+    padding: 20px 72px;
+}
+
+.secondPage__bottomFrameImgContainer {
+    position: absolute;
+    top: -19px;
+    left: -50px;
+}
+
+.secondPage__bottomFrameImgText {
+    position: absolute;
+    top: 0;
+    left: 0;
+    transform: rotate(2.319deg);
+    width: 118px;
+    font-size: 16px;
+    font-weight: 600;
+    color: #8A8A8A;
+}
+
+.secondPage__bottomFrameImg {
+    position: absolute;
+    top: 8px;
+    left: 128px;
+    transform: rotate(139.039deg);
 }
