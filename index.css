@@ -679,22 +679,30 @@ input[type=range]::-webkit-slider-thumb {
 
 .thirdPage__cardIconsContainer {
     position: absolute;
+    display: flex;
     right: 40px;
     top: 40px;
+}
+
+.thirdPage__smileContainer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 60px;
+    height: 60px;
+    background-color: #E8EAEB;
+    border: 2px solid #FAFCFF;
+    border-radius: 50px;
+    position: relative;
 }
 
 .thirdPage__smile {
     width: 40px;
     height: 40px;
-    padding: 10px;
-    background-color: #E8EAEB;
-    border: 2px solid #FAFCFF;
-    border-radius: 100px;
-    position: relative;
 }
 
 .thirdPage__smile1 {
-    left: 22px;
+    left: 16px;
 }
 
 .thirdPage__bottomContainer {
