@@ -270,7 +270,58 @@
             </div>
         </div>
     </div>
-
+    <div class="videoPage">
+        <div class="videoPage__topBorder"></div>
+        <div class="content">
+            <h2 class="videoPage__title">О компании «Cardson»</h2>
+            <h4 class="videoPage__desc">Видео основателя компании Михаила Сниткова</h4>
+            <video class="videoPage__video" src="assets/videos/video.mp4" width="1160" height="625" controls="controls"
+                   poster="assets/images/frame.png">
+                Ваш браузер не поддерживает видео
+            </video>
+            <div class="videoPage__incomeTitleContainer">
+                <span class="videoPage__incomeTitle">
+                    Ваш доход на
+                </span>
+                <div class="wrappedText videoPage__fingers">
+                    <div class="wrappedText__wrapper"></div>
+                    <div class="wrappedText__title">пальцах</div>
+                </div>
+            </div>
+            <div class="videoPage__incomeContainer">
+                <div class="videoPage__cardsCreatedTitle">
+                    Количество созданных карточек
+                </div>
+                <div class="videoPage__cardsCreatedRange range">
+                    <span id="cardCreatedNumber" class="range__value">50</span>
+                    <input oninput="onCardsCreatedChange(this)" type="range" min="1" max="100" value="50"/>
+                    <div class="range__infoContainer">
+                        <span>1</span>
+                        <span>100</span>
+                    </div>
+                </div>
+                <div class="videoPage__numberOfSalesTitle">
+                    Количество продаж в месяц
+                </div>
+                <div class="videoPage__numberOfSalesDesc">
+                    С одной карточки вы получаете ~70 рублей
+                </div>
+                <div class="videoPage__cardsCreatedRange range">
+                    <span id="numberOfSales" class="range__value">75</span>
+                    <input oninput="onNumberOfSalesChange(this)" type="range" min="1" max="150" value="75"/>
+                    <div class="range__infoContainer">
+                        <span>1</span>
+                        <span>150</span>
+                    </div>
+                </div>
+                <div class="videoPage__incomeInfo">Ваш доход в месяц составит</div>
+                <div class="wrappedText videoPage__income">
+                    <div class="wrappedText__wrapper"></div>
+                    <div id="income" class="wrappedText__title">262500.-</div>
+                </div>
+            </div>
+        </div>
+    </div>
 </div>
 </body>
 </html>
