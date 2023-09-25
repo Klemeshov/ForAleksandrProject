@@ -52,7 +52,7 @@ const onInputRangeChange = (element) => {
 }
 
 onParametersChange = () => {
-    Income.innerText = `${CardsCreatedValue * NumberOfSalesValue * 70}.-`
+    Income.innerText = `${CardsCreatedValue * NumberOfSalesValue * 70} ₽`
 }
 
 const onCardsCreatedChange = (element) => {
