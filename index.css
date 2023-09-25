@@ -649,6 +649,9 @@
     font-weight: 600;
     line-height: 27px;
     color: #26B0ED;
+    display: flex;
+    gap: 6px;
+    align-items: center;
 }
 
 .thirdPage__cardText {
