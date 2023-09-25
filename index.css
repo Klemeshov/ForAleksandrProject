@@ -18,6 +18,7 @@
 }
 
 .redButton {
+    width: fit-content;
     font-size: 22px;
     font-style: normal;
     font-weight: 600;
@@ -30,6 +31,15 @@
 
 .redButton:hover {
     background-color: #BA3145;
+}
+
+.videoLink {
+    margin-top: 15px;
+    color: #098DC8;
+}
+
+.videoLink:hover {
+    text-decoration-line: underline;
 }
 
 .header {
@@ -164,15 +174,9 @@
     margin-top: 60px;
 }
 
-.mainPage__videLink {
-    margin-top: 15px;
-    text-align: center;
+.mainPage__videoLink {
     font-size: 20px;
-    font-style: normal;
     font-weight: 400;
-    line-height: normal;
-    text-decoration-line: underline;
-    color: #098DC8;
 }
 
 .mainPage__circle {
@@ -355,6 +359,7 @@
     position: relative;
     background-color: #26B0ED;
     z-index: 100;
+    padding-bottom: 192px;
 }
 
 .secondPage__title {
@@ -572,4 +577,111 @@
     top: 8px;
     left: 128px;
     transform: rotate(139.039deg);
+}
+
+.thirdPage {
+    position: relative;
+    background-color: #FAFCFF;
+    z-index: 100;
+    padding-bottom: 192px;
+}
+
+.thirdPage__topBorder {
+    position: absolute;
+    background-color: #FAFCFF;
+    border-radius: 64px 64px 0 0;
+    top: -96px;
+    z-index: 100;
+    width: 100vw;
+    height: 96px;
+}
+
+.thirdPage__title {
+    font-size: 52px;
+    font-weight: 600;
+    color: black;
+    max-width: 700px;
+    text-align: center;
+    margin: 0 auto;
+}
+
+.thirdPage__cardsContainer {
+    margin: 64px auto;
+    max-width: 962px;
+    display: flex;
+    flex-direction: column;
+    gap: 48px;
+}
+
+.thirdPage__card {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+}
+
+.thirdPage__cardContainer {
+    position: relative;
+    border-radius: 24px;
+    padding: 40px;
+    background-color: #F5F6F7;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.thirdPage__number {
+    font-size: 16px;
+    font-weight: 600;
+    border-radius: 1000px;
+    background-color: #D0FF14;
+    padding: 6px 20px;
+    width: fit-content;
+}
+
+.thirdPage__cardTitle {
+    font-size: 32px;
+    font-weight: 500;
+    line-height: 40px;
+}
+
+.thirdPage__cardDesc {
+    font-size: 20px;
+    font-weight: 600;
+    line-height: 27px;
+    color: #26B0ED;
+}
+
+.thirdPage__cardText {
+    max-width: 590px;
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 24px;
+    margin-top: 10px;
+}
+
+.thirdPage__cardIconsContainer {
+    position: absolute;
+    right: 40px;
+    top: 40px;
+}
+
+.thirdPage__smile {
+    width: 40px;
+    height: 40px;
+    padding: 10px;
+    background-color: #E8EAEB;
+    border: 2px solid #FAFCFF;
+    border-radius: 100px;
+    position: relative;
+}
+
+.thirdPage__smile1 {
+    left: 22px;
+}
+
+.thirdPage__bottomContainer {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
 }
