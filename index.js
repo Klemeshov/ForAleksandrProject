@@ -6,6 +6,9 @@ let LastWordBorder;
 let CardCreatedNumber;
 let NumberOfSales;
 let Income;
+let LastPageCardsContainer;
+let LastPageCards
+let NumberOfCards
 
 document.addEventListener("DOMContentLoaded", () => {
     Circle = document.getElementById('circle');
@@ -16,6 +19,9 @@ document.addEventListener("DOMContentLoaded", () => {
     CardCreatedNumber = document.getElementById('cardCreatedNumber');
     NumberOfSales = document.getElementById('numberOfSales');
     Income = document.getElementById('income');
+    LastPageCardsContainer = document.getElementById('lastPageCards');
+    NumberOfCards = document.getElementById('numberOfCards');
+    LastPageCards = document.getElementsByClassName('lastPage__card');
 
     setTimeout(() => {
         if (LastWordBorder) {
@@ -69,4 +75,31 @@ const onNumberOfSalesChange = (element) => {
     onParametersChange();
     NumberOfSales.innerText = element.value;
     NumberOfSales.style.left = `${3 + (element.value - 1) * 4.857}px`;
+}
+
+let index = 0;
+const maxIndex = 5;
+
+const onPlus = () => {
+    if (index < maxIndex) {
+        LastPageCardsContainer.scrollBy({
+            left: 660,
+            behavior: 'smooth'
+        });
+        index += 1;
+        LastPageCards[index].className = 'lastPage__card';
+        NumberOfCards.innerText = `${index + 1}/${maxIndex + 1}`
+    }
+}
+
+const onMinus = () => {
+    if (index > 0) {
+        LastPageCardsContainer.scrollBy({
+            left: -660,
+            behavior: 'smooth'
+        });
+        LastPageCards[index].className = 'lastPage__card lastPage__smallCard';
+        index -= 1;
+        NumberOfCards.innerText = `${index + 1}/${maxIndex + 1}`
+    }
 }

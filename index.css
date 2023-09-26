@@ -847,6 +847,149 @@ input[type=range]::-webkit-slider-thumb {
     font-size: 52px;
     font-weight: 600;
     color: #000;
-    z-index: 100    ;
+    z-index: 100;
     margin-top: 14px;
+}
+
+.lastPage {
+    position: relative;
+    background-color: #FAFCFF;
+}
+
+.lastPage__topBorder {
+    position: absolute;
+    background-color: #FAFCFF;
+    border-radius: 64px 64px 0 0;
+    top: -96px;
+    width: 100vw;
+    height: 96px;
+    z-index: 101;
+}
+
+.lastPage__title {
+    color: #051822;
+    font-size: 52px;
+    font-weight: 600;
+    margin-bottom: 40px;
+}
+
+.lastPage__cardsContainer {
+    position: relative;
+    display: flex;
+    flex-direction: row;
+    align-self: flex-end;
+    overflow: hidden;
+}
+
+.lastPage__card {
+    padding: 32px;
+    background-color: #F5F6F7;
+    border-radius: 32px;
+    display: flex;
+    flex-direction: column;
+    gap: 32px;
+    min-width: 596px;
+    transition: transform 0.6s;
+}
+
+.lastPage__lastCard {
+    min-width: 596px;
+}
+
+.lastPage__cardTopInfo {
+    display: flex;
+    gap: 34px;
+}
+
+.lastPage__cardAvatar {
+    width: 210px;
+    height: 210px;
+    border-radius: 50px;
+}
+
+.lastPage__cardGeneralInfo {
+    margin: 16px 0;
+}
+
+.lastPage__cardProfession {
+    color: #051822;
+    font-size: 20px;
+    font-weight: 600;
+    line-height: 27px;
+}
+
+.lastPage__cardName {
+    color: #051822;
+    font-size: 32px;
+    font-weight: 500;
+    line-height: 40px;
+    margin-top: 4px;
+}
+
+.lastPage__cardProfit {
+    color: #051822;
+    font-size: 20px;
+    font-weight: 600;
+    line-height: 27px;
+}
+
+.lastPage__cardSalary {
+    width: 163px;
+    height: 52px;
+    z-index: 1;
+    color: #051822;
+    font-size: 32px;
+    font-weight: 500;
+    line-height: 40px;
+    left: -12px
+}
+
+.lastPage__cardDescContainer {
+    height: 144px;
+    display: flex;
+    align-items: center;
+}
+
+.lastPage__cardDesc {
+    color: #051822;
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 24.3px;
+}
+
+.lastPage__smallCard {
+    position: relative;
+    transform: scale(0.7) translate(-88px, 96px);
+}
+
+.lastPage__navContainer {
+    position: relative;
+    z-index: 1;
+}
+
+.lastPage__navPanel {
+    position: absolute;
+    top: 0;
+    right: 0;
+    display: flex;
+    gap: 245px;
+}
+
+.lastPage__numberOfCard {
+    color: #051822;
+    font-size: 32px;
+    font-weight: 500;
+    line-height: 40px;
+}
+
+.lastPage__navContainer {
+    display: flex;
+    gap: 8px;
+}
+
+.lastPage__nav {
+    border: 1px solid #EE3F58;
+    border-radius: 100px;
+    cursor: pointer;
+    padding: 10px 15px;
 }
