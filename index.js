@@ -79,9 +79,11 @@ const onNumberOfSalesChange = (element) => {
 
 let index = 0;
 const maxIndex = 5;
+let isAnimation = false;
 
 const onPlus = () => {
-    if (index < maxIndex) {
+    if (index < maxIndex && !isAnimation) {
+        isAnimation = true;
         LastPageCardsContainer.scrollBy({
             left: 660,
             behavior: 'smooth'
@@ -89,11 +91,13 @@ const onPlus = () => {
         index += 1;
         LastPageCards[index].className = 'lastPage__card';
         NumberOfCards.innerText = `${index + 1}/${maxIndex + 1}`
+        setTimeout(() => {isAnimation = false}, 400);
     }
 }
 
 const onMinus = () => {
-    if (index > 0) {
+    if (index > 0  && !isAnimation) {
+        isAnimation = true;
         LastPageCardsContainer.scrollBy({
             left: -660,
             behavior: 'smooth'
@@ -101,5 +105,6 @@ const onMinus = () => {
         LastPageCards[index].className = 'lastPage__card lastPage__smallCard';
         index -= 1;
         NumberOfCards.innerText = `${index + 1}/${maxIndex + 1}`
+        setTimeout(() => {isAnimation = false}, 400);
     }
 }
