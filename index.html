@@ -343,12 +343,12 @@
                 <div class="lastPage__navPanel">
                     <div id="numberOfCards" class="lastPage__numberOfCard">1/5</div>
                     <div class="lastPage__arrowContainer">
-                        <span class="lastPage__nav" onclick="onMinus()">
-                            <img src="assets/svg/arrow-button.svg" alt="стрелка"/>
-                        </span>
-                        <span class="lastPage__nav" onclick="onPlus()">
-                            <img class="lastPage__rightArrow" src="assets/svg/arrow-button.svg" alt="стрелка"/>
-                        </span>
+                        <span id="leftArrow" class="lastPage__nav" onclick="onMinus()"><img width="64"
+                                                                                            src="assets/svg/disable-arrow-button.svg"
+                                                                                            alt="стрелка"/></span>
+                        <span id="rightArrow" class="lastPage__nav lastPage__navActive" onclick="onPlus()"><img
+                                width="64" class="lastPage__rightArrow" src="assets/svg/arrow-button.svg"
+                                alt="стрелка"/></span>
                     </div>
                 </div>
             </div>
@@ -482,8 +482,70 @@
             </div>
             <div class="redButton lastPage__button">Стать партнёром</div>
             <div class="lastPage__alreadyCreatingTitle">Что уже создают наши авторы</div>
+            <div class="lastPage__imagesContainer">
+                <img class="product1 lastPage__productImg" src="assets/images/product_1.png" alt="продукт"/>
+                <img class="product2 lastPage__productImg" src="assets/images/product_2.png" alt="продукт"/>
+                <img class="product3 lastPage__productImg" src="assets/images/product_3.png" alt="продукт"/>
+                <img class="product4 lastPage__productImg" src="assets/images/product_4.png" alt="продукт"/>
+                <img class="product5 lastPage__productImg" src="assets/images/product_5.png" alt="продукт"/>
+                <img class="product6 lastPage__productImg" src="assets/images/product_6.png" alt="продукт"/>
+                <img class="product7 lastPage__productImg" src="assets/images/product_7.png" alt="продукт"/>
+                <div class="lastPage__infoContainer">
+                    <div class="lastPage__infoText">
+                        Каждая созданная карточка приносит доход каждый месяц
+                    </div>
+                    <div class="wrappedText lastPage__infoWrapped">
+                        <div class="wrappedText__wrapper"></div>
+                        <div class="wrappedText__title">Без вашего участия</div>
+                    </div>
+                </div>
+            </div>
+            <div class="lastPage__form form__formContainer">
+                <div class="form__titleContainer">
+                    <div class="form__title">
+                        Присоединяйтесь <br/>к нашей команде!
+                    </div>
+                    <div class="form__desc">
+                        В независимости <br/>от местоположения <br/>и часового пояса
+                    </div>
+                </div>
+                <div class="form__contactsContainer">
+                    <div class="wrappedText form__contactsTitle">
+                        <div class="wrappedText__wrapper"></div>
+                        <div class="wrappedText__title">Контакты</div>
+                    </div>
+                    <div class="form__contact">info@cardson.ru</div>
+                    <div class="form__contact">Telegram</div>
+                </div>
+                <div class="form">
+                    <div class="form__topContainer">
+                        <div class="form__registration">
+                            Пройдите быструю регистрацию
+                        </div>
+                        <div class="form__registrationInfo">
+                            После регистрации <br/>вы автоматически попадёте на платформу. Наш менеджер свяжется с вами
+                            и ответит на все ваши вопросы
+                        </div>
+                    </div>
+                    <div class="form__inputsContainer">
+                        <input class="form__input" placeholder="Ваше Имя*"/>
+                        <input class="form__input" placeholder="Ваш e-mail*"/>
+                    </div>
+                    <div class="redButton form__button">Зарегистрироваться</div>
+                    <div class="form__footerText">Нажимая на кнопку «Зарегистрироваться» вы соглашаетесь <br/>с <a
+                            class="form__footerLink" href="#">условиями обработки персональных данных</a></div>
+                </div>
+            </div>
         </div>
     </div>
+    <footer class="footer">
+        <div class="content footer__content">
+            <span class="footer__text">©2023. Все права защищены</span>
+            <a href="#" class="footer__text">Политика конфиденциальности</a>
+            <a href="#" class="footer__text">Оферта</a>
+            <a href="#" class="footer__text">Связаться с нами</a>
+        </div>
+    </footer>
 </div>
 </body>
 </html>

@@ -7,8 +7,10 @@ let CardCreatedNumber;
 let NumberOfSales;
 let Income;
 let LastPageCardsContainer;
-let LastPageCards
-let NumberOfCards
+let LastPageCards;
+let NumberOfCards;
+let LeftArrow;
+let RightArrow;
 
 document.addEventListener("DOMContentLoaded", () => {
     Circle = document.getElementById('circle');
@@ -21,6 +23,8 @@ document.addEventListener("DOMContentLoaded", () => {
     Income = document.getElementById('income');
     LastPageCardsContainer = document.getElementById('lastPageCards');
     NumberOfCards = document.getElementById('numberOfCards');
+    LeftArrow = document.getElementById('leftArrow');
+    RightArrow = document.getElementById('rightArrow');
     LastPageCards = document.getElementsByClassName('lastPage__card');
 
     setTimeout(() => {
@@ -91,12 +95,22 @@ const onPlus = () => {
         index += 1;
         LastPageCards[index].className = 'lastPage__card';
         NumberOfCards.innerText = `${index + 1}/${maxIndex + 1}`
-        setTimeout(() => {isAnimation = false}, 400);
+        if (index === maxIndex) {
+            RightArrow.className = 'lastPage__nav';
+            RightArrow.firstChild.src = `assets/svg/disable-arrow-button.svg?t=${new Date().getTime()}`;
+        }
+        if (index > 0) {
+            LeftArrow.className = 'lastPage__nav lastPage__navActive';
+            LeftArrow.firstChild.src = `assets/svg/arrow-button.svg?t=${new Date().getTime()}`;
+        }
+        setTimeout(() => {
+            isAnimation = false
+        }, 400);
     }
 }
 
 const onMinus = () => {
-    if (index > 0  && !isAnimation) {
+    if (index > 0 && !isAnimation) {
         isAnimation = true;
         LastPageCardsContainer.scrollBy({
             left: -660,
@@ -105,6 +119,16 @@ const onMinus = () => {
         LastPageCards[index].className = 'lastPage__card lastPage__smallCard';
         index -= 1;
         NumberOfCards.innerText = `${index + 1}/${maxIndex + 1}`
-        setTimeout(() => {isAnimation = false}, 400);
+        if (index === 0) {
+            LeftArrow.className = 'lastPage__nav';
+            LeftArrow.firstChild.src = 'assets/svg/disable-arrow-button.svg';
+        }
+        if (index < maxIndex) {
+            RightArrow.className = 'lastPage__nav lastPage__navActive';
+            RightArrow.firstChild.src = 'assets/svg/arrow-button.svg';
+        }
+        setTimeout(() => {
+            isAnimation = false
+        }, 400);
     }
 }

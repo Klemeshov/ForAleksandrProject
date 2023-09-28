@@ -941,7 +941,8 @@ input[type=range]::-webkit-slider-thumb {
     font-size: 32px;
     font-weight: 500;
     line-height: 40px;
-    left: -12px
+    left: -12px;
+    margin-top: 4px;
 }
 
 .lastPage__cardDescContainer {
@@ -989,7 +990,7 @@ input[type=range]::-webkit-slider-thumb {
 }
 
 .lastPage__nav {
-    cursor: pointer;
+    cursor: default;
     margin: 0;
     padding: 0;
     width: 64px;
@@ -997,7 +998,11 @@ input[type=range]::-webkit-slider-thumb {
     transition: transform 0.1s;
 }
 
-.lastPage__nav:active {
+.lastPage__navActive {
+    cursor: pointer;
+}
+
+.lastPage__navActive:active {
     transform: scale(0.9);
 }
 
@@ -1015,4 +1020,226 @@ input[type=range]::-webkit-slider-thumb {
     font-weight: 600;
     text-align: center;
     margin-bottom: 40px;
+}
+
+.lastPage__imagesContainer {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 360px 208px 360px 360px;
+    gap: 32px 40px;
+    grid-template-areas:
+    "product1 product2 product3"
+    "product1 product5 product3"
+    "product4 product5 product6"
+    "info info product7";
+}
+
+.lastPage__productImg {
+    height: 100%;
+    border-radius: 24px;
+}
+
+.product1 {
+    grid-area: product1;
+}
+
+.product2 {
+    grid-area: product2;
+}
+
+.product3 {
+    grid-area: product3;
+}
+
+.product4 {
+    grid-area: product4;
+}
+
+.product5 {
+    grid-area: product5;
+}
+
+.product6 {
+    grid-area: product6;
+}
+
+.product7 {
+    grid-area: product7;
+}
+
+.lastPage__infoContainer {
+    grid-area: info;
+    display: flex;
+    flex-direction: column;
+    gap: 6px;
+    padding: 63px 225px 63px 32px;
+    background-color: #F5F6F7;
+    border-radius: 24px;
+}
+
+.lastPage__infoText {
+    color: #051822;
+    font-size: 44px;
+    font-weight: 600;
+}
+
+.lastPage__infoWrapped {
+    left: -17px;
+    width: 468px;
+    height: 69px;
+    z-index: 1;
+    color: #000;
+    font-size: 44px;
+    font-weight: 600;
+}
+
+.lastPage__form {
+    margin-top: 72px;
+    margin-bottom: 72px;
+}
+
+.form__formContainer {
+    padding: 32px;
+    border-radius: 32px;
+    background-color: #26B0ED;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 274px 168px;
+    row-gap: 64px;
+    grid-template-areas:
+    "title form"
+    "contacts form";
+}
+
+.form__titleContainer {
+    grid-area: title;
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+    margin-top: 12px;
+}
+
+.form__contactsContainer {
+    grid-area: contacts;
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+    margin-bottom: 12px;
+}
+
+.form {
+    grid-area: form;
+    padding: 24px;
+    background-color: #fff;
+    border-radius: 24px;
+}
+
+.form__title {
+    color: #FFF;
+    font-size: 52px;
+    font-weight: 600;
+}
+
+.form__desc {
+    color: #FFF;
+    font-size: 32px;
+    font-weight: 500;
+    line-height: 40px;
+}
+
+.form__contactsTitle {
+    left: -5px;
+    width: 164px;
+    height: 52px;
+    z-index: 1;
+    color: #051822;
+    font-size: 32px;
+    font-weight: 500;
+    line-height: 40px;
+}
+
+.form__contact {
+    color: #FFF;
+    font-size: 32px;
+    font-weight: 500;
+    line-height: 40px;
+}
+
+.form__topContainer {
+    display: flex;
+    gap: 16px;
+}
+
+.form__registration {
+    width: 213.843px;
+    color: #000;
+    font-size: 32px;
+    font-weight: 500;
+    line-height: 40px;
+}
+
+.form__registrationInfo {
+    flex: 1 0 0;
+    color: #8A8A8A;
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 24.3px;
+}
+
+.form__inputsContainer {
+    margin-top: 24px;
+    margin-bottom: 63px;
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+}
+
+.form__input {
+    border-radius: 12px;
+    background: #F5F6F7;
+    padding: 20px 24px;
+    border: none;
+    color: #8A8A8A;
+    font-size: 16px;
+    font-weight: 500;
+}
+
+.form__button {
+    padding: 16px 133px;
+    font-size: 22px;
+}
+
+.form__footerText {
+    margin-top: 16px;
+    color: #8A8A8A;
+    font-size: 14px;
+    font-weight: 400;
+}
+
+.form__footerLink {
+    color: #26B0ED;
+}
+
+.form__footerLink:hover {
+    border-bottom: 1px solid #26B0ED;
+}
+
+.footer {
+    background: #F5F6F7;
+}
+
+.footer__content {
+    display: flex;
+    justify-content: space-between;
+    padding: 32px 24px;
+}
+
+.footer__text {
+    color: #000;
+    font-size: 12px;
+    font-weight: 400;
+}
+
+.footer__content > a:hover {
+    border-bottom: 1px solid #000;
 }
