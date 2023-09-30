@@ -19,19 +19,19 @@
                 <div class="header__logoFont wordSon">son</div>
             </div>
             <div class="header__nav">
-                <a href="" class="header__link">О проекте</a>
-                <a href="" class="header__link">Как работает?</a>
-                <a href="" class="header__link">Калькулятор</a>
-                <a href="" class="header__link">Наши авторы</a>
+                <a href="#secondPage" class="header__link">О проекте</a>
+                <a href="#thirdPage" class="header__link">Как работает?</a>
+                <a href="#incomeContainer" class="header__link">Калькулятор</a>
+                <a href="#lastPage" class="header__link">Наши авторы</a>
             </div>
-            <a href="" class="header__registrationButton">
+            <a href="#form" class="header__registrationButton">
                 Регистрация
             </a>
         </div>
     </div>
 </header>
 <div class="rootContainer">
-    <div class="mainPage">
+    <div id="mainPage" class="mainPage">
         <div class="mainPage__backgroundTips">
             <div id="stickers" class="mainPage__cards">
                 <div class="sticker mainPage__sticker1">
@@ -127,12 +127,12 @@
             <div class="mainPage__description">
                 CARDSON — площадка для удалённого заработка без вложений и специальных навыков для всех
             </div>
-            <a href="" class="redButton mainPage__button">Начать зарабатывать</a>
-            <a href="" class="mainPage__videoLink videoLink">Видео про CARDSON</a>
+            <a href="#form" class="redButton mainPage__button">Начать зарабатывать</a>
+            <a href="#videoPage" class="mainPage__videoLink videoLink">Видео про CARDSON</a>
             <img id="window" class="mainPage__window" src="assets/images/window.png" alt="window"/>
         </div>
     </div>
-    <div class="secondPage">
+    <div id="secondPage" class="secondPage">
         <div class="content secondPage__content">
             <h2 class="secondPage__title">Придумываете вы, продаём мы</h2>
             <div class="wrappedText secondPage__subtitle">
@@ -193,12 +193,12 @@
                         <div class="secondPage__bottomFrameImgText">Мы ждём вас!</div>
                         <img src="assets/svg/arrow.svg" class="secondPage__bottomFrameImg" alt="стрелка"/>
                     </div>
-                    <div class="redButton secondPage__bottomFrameButton">Стать партнёром</div>
+                    <a href="#form" class="redButton secondPage__bottomFrameButton">Стать партнёром</a>
                 </div>
             </div>
         </div>
     </div>
-    <div class="thirdPage">
+    <div id="thirdPage" class="thirdPage">
         <div class="thirdPage__topBorder"></div>
         <div class="content thirdPage__content">
             <h2 class="thirdPage__title">Всего 3 шага до вашего простого дохода</h2>
@@ -277,22 +277,21 @@
                 </div>
             </div>
             <div class="thirdPage__bottomContainer">
-                <a class="redButton" href="#">Начать зарабатывать</a>
-                <a class="videoLink" href="#">Видео про CARDSON</a>
+                <a class="redButton" href="#form">Начать зарабатывать</a>
+                <a class="videoLink" href="#videoPage">Видео про CARDSON</a>
             </div>
         </div>
     </div>
-    <div class="videoPage">
+    <div id="videoPage" class="videoPage">
         <div class="videoPage__topBorder"></div>
         <div class="content">
             <h2 class="videoPage__title">О компании «CARDSON»</h2>
             <h4 class="videoPage__desc">Видео основателя компании Михаила Сниткова</h4>
             <video class="videoPage__video" src="https://cardson.ru/wa-content/video.mp4" width="1160" height="652"
-                   controls="controls"
-                   poster="assets/images/frame.png">
+                   controls="controls">
                 Ваш браузер не поддерживает видео
             </video>
-            <div class="videoPage__incomeTitleContainer">
+            <div id="incomeContainer" class="videoPage__incomeTitleContainer">
                 <span class="videoPage__incomeTitle">
                     Ваш доход на
                 </span>
@@ -335,13 +334,13 @@
             </div>
         </div>
     </div>
-    <div class="lastPage">
+    <div id="lastPage" class="lastPage">
         <div class="lastPage__topBorder"></div>
         <div class="content">
             <h2 class="lastPage__title">Кто с нами работает</h2>
             <div class="lastPage__navContainer">
                 <div class="lastPage__navPanel">
-                    <div id="numberOfCards" class="lastPage__numberOfCard">1/5</div>
+                    <div id="numberOfCards" class="lastPage__numberOfCard">1/6</div>
                     <div class="lastPage__arrowContainer">
                         <span id="leftArrow" class="lastPage__nav" onclick="onMinus()"><img width="64"
                                                                                             src="assets/svg/disable-arrow-button.svg"
@@ -480,7 +479,7 @@
                 </div>
                 <div class="lastPage__lastCard"></div>
             </div>
-            <div class="redButton lastPage__button">Стать партнёром</div>
+            <a href="#form" class="redButton lastPage__button">Стать партнёром</a>
             <div class="lastPage__alreadyCreatingTitle">Что уже создают наши авторы</div>
             <div class="lastPage__imagesContainer">
                 <img class="product1 lastPage__productImg" src="assets/images/product_1.png" alt="продукт"/>
@@ -500,7 +499,7 @@
                     </div>
                 </div>
             </div>
-            <div class="lastPage__form form__formContainer">
+            <div id="form" class="lastPage__form form__formContainer">
                 <div class="form__titleContainer">
                     <div class="form__title">
                         Присоединяйтесь <br/>к нашей команде!
@@ -514,8 +513,8 @@
                         <div class="wrappedText__wrapper"></div>
                         <div class="wrappedText__title">Контакты</div>
                     </div>
-                    <div class="form__contact">info@cardson.ru</div>
-                    <div class="form__contact">Telegram</div>
+                    <a href="mailto:info@cardson.ru" class="form__contact">info@cardson.ru</a>
+                    <a href="#" class="form__contact">Telegram</a>
                 </div>
                 <div class="form">
                     <div class="form__topContainer">

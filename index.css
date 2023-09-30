@@ -5,6 +5,7 @@
     color: black;
     text-decoration: none;
     font-family: Inter, serif;
+    scroll-behavior: smooth;
 }
 
 input[type=range] {
@@ -42,10 +43,15 @@ input[type=range]::-webkit-slider-thumb {
     padding: 20px 48px;
     background-color: #EE3F58;
     border-radius: 12px;
+    transition: transform 0.1s;
 }
 
 .redButton:hover {
     background-color: #BA3145;
+}
+
+.redButton:active {
+    transform: scale(0.95);
 }
 
 .videoLink {
@@ -127,7 +133,8 @@ input[type=range]::-webkit-slider-thumb {
 }
 
 .header__registrationButton:hover {
-    background-color: rgba(238, 63, 88, 0.2);
+    color: #FFF;
+    background-color: #EE3F58;
 }
 
 .mainPage {
@@ -1011,6 +1018,7 @@ input[type=range]::-webkit-slider-thumb {
 }
 
 .lastPage__button {
+    display: block;
     margin: 60px auto 72px auto;
 }
 
@@ -1037,6 +1045,10 @@ input[type=range]::-webkit-slider-thumb {
 .lastPage__productImg {
     height: 100%;
     border-radius: 24px;
+}
+
+.lastPage__productImg:hover {
+    box-shadow: 0 10px 24px 0 rgba(37, 39, 39, 0.15);
 }
 
 .product1 {
@@ -1148,8 +1160,8 @@ input[type=range]::-webkit-slider-thumb {
 }
 
 .form__contactsTitle {
-    left: -5px;
-    width: 164px;
+    left: -12px;
+    width: 180px;
     height: 52px;
     z-index: 1;
     color: #051822;
@@ -1163,6 +1175,10 @@ input[type=range]::-webkit-slider-thumb {
     font-size: 32px;
     font-weight: 500;
     line-height: 40px;
+}
+
+.form__contact:hover {
+    color: #D0FF14;
 }
 
 .form__topContainer {
