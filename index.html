@@ -526,11 +526,12 @@
                             и ответит на все ваши вопросы
                         </div>
                     </div>
-                    <div class="form__inputsContainer">
-                        <input class="form__input" placeholder="Ваше Имя*"/>
-                        <input class="form__input" placeholder="Ваш e-mail*"/>
-                    </div>
-                    <div class="redButton form__button">Зарегистрироваться</div>
+                    <form action="success.php" method="post" target="_self" class="form__inputsContainer">
+                        <input required name="name" class="form__input" placeholder="Ваше Имя*"/>
+                        <input required type="email" name="email" class="form__input" placeholder="Ваш e-mail*"/>
+                        <div class="form__requiredInfo">Поля отмеченные * являются обязательными для заполнения</div>
+                        <button type="submit" class="redButton form__button">Зарегистрироваться</button>
+                    </form>
                     <div class="form__footerText">Нажимая на кнопку «Зарегистрироваться» вы соглашаетесь <br/>с <a
                             class="form__footerLink" href="#">условиями обработки персональных данных</a></div>
                 </div>

@@ -46,7 +46,7 @@ window.addEventListener('scroll', () => {
         Window.style.transform = `translate(0, -${min(posTop / 3, 400)}px)`;
     }
     if (Cards) {
-        Cards.style.transform = `translate(0, ${min(posTop / 5, 200)}px)`;
+        Cards.style.transform = `translate(0, -${min(posTop / 4, 200)}px)`;
     }
     if (Icons) {
         Icons.style.transform = `translate(0, ${min(posTop / 4, 200)}px)`;

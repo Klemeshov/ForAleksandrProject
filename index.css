@@ -8,6 +8,10 @@
     scroll-behavior: smooth;
 }
 
+button {
+    border: none;
+}
+
 input[type=range] {
     -webkit-appearance: none;
     width: 100%;
@@ -1045,10 +1049,12 @@ input[type=range]::-webkit-slider-thumb {
 .lastPage__productImg {
     height: 100%;
     border-radius: 24px;
+    transition: 0.4s;
 }
 
 .lastPage__productImg:hover {
-    box-shadow: 0 10px 24px 0 rgba(37, 39, 39, 0.15);
+    transform: scale(1.02);
+    box-shadow: 0 12px 24px 0 rgba(6, 35, 69, 0.10), 0 2px 8px 0 rgba(6, 35, 69, 0.30);
 }
 
 .product1 {
@@ -1117,7 +1123,7 @@ input[type=range]::-webkit-slider-thumb {
     display: grid;
     grid-template-columns: 1fr 1fr;
     grid-template-rows: 274px 168px;
-    row-gap: 64px;
+    row-gap: 100px;
     grid-template-areas:
     "title form"
     "contacts form";
@@ -1204,7 +1210,6 @@ input[type=range]::-webkit-slider-thumb {
 
 .form__inputsContainer {
     margin-top: 24px;
-    margin-bottom: 63px;
     display: flex;
     flex-direction: column;
     gap: 16px;
@@ -1223,6 +1228,8 @@ input[type=range]::-webkit-slider-thumb {
 .form__button {
     padding: 16px 133px;
     font-size: 22px;
+    margin-top: 50px;
+    height: 100%;
 }
 
 .form__footerText {
@@ -1238,6 +1245,12 @@ input[type=range]::-webkit-slider-thumb {
 
 .form__footerLink:hover {
     border-bottom: 1px solid #26B0ED;
+}
+
+.form__requiredInfo {
+    color: #8A8A8A;
+    font-size: 14px;
+    font-weight: 400;
 }
 
 .footer {
