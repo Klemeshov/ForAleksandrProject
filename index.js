@@ -26,6 +26,28 @@ document.addEventListener("DOMContentLoaded", () => {
     LeftArrow = document.getElementById('leftArrow');
     RightArrow = document.getElementById('rightArrow');
     LastPageCards = document.getElementsByClassName('lastPage__card');
+    const inputs = document.querySelectorAll("input");
+    inputs.forEach(input => {
+        input.addEventListener("input", () => {
+            input.classList.remove("error");
+        });
+        input.addEventListener(
+            "invalid",
+            () => {
+                input.classList.add("error");
+            },
+            false
+        );
+        input.addEventListener("blur", function () {
+            input.checkValidity();
+        });
+    });
+    const whiteBlock = document.getElementById("whiteBlock");
+    whiteBlock.style.transition = '1s'
+    setTimeout(() => {
+        whiteBlock.style.opacity = '0';
+    }, 500)
+
 
     setTimeout(() => {
         if (LastWordBorder) {
