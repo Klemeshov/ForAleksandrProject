@@ -475,6 +475,12 @@ input[type=range]::-webkit-slider-thumb {
     gap: 8px;
 }
 
+.secondPage__cardInfoContainer {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+}
+
 .secondPage__cardTitle {
     color: #051822;
     font-size: 20px;
@@ -1422,6 +1428,112 @@ input[type=range]::-webkit-slider-thumb {
         width: 542px;
         height: 368px;
     }
+
+    .secondPage__cardsContainer {
+        flex-direction: column;
+        gap: 20px;
+    }
+
+    .secondPage__card {
+        padding: 24px;
+        height: auto;
+        width: 100%;
+        box-sizing: border-box;
+
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    .secondPage__cardImageContainer {
+        width: 240px;
+        height: 180px;
+    }
+
+    .secondPage__card1Icon1 {
+        width: 125px;
+        height: 125px;
+        top: 0;
+        right: 0;
+    }
+
+    .secondPage__card1Icon2 {
+        width: 100px;
+        height: 100px;
+        bottom: 0;
+        left: 47px;
+    }
+
+    .secondPage__card1Icon3 {
+        width: 67px;
+        height: 67px;
+        top: 57px;
+        left: 0;
+    }
+
+    .secondPage__card2Icon1 {
+        width: 111px;
+        height: 165px;
+        bottom: 0;
+        right: 0;
+    }
+
+    .secondPage__card2Icon2 {
+        width: 111px;
+        height: 165px;
+        top: 0;
+        left: 66px;
+    }
+
+    .secondPage__card2Icon3 {
+        width: 111px;
+        height: 165px;
+        left: 0;
+        bottom: 0;
+    }
+
+    .secondPage__card3Icon1 {
+        width: 135px;
+        height: 139px;
+        right: 0;
+        bottom: 0;
+    }
+
+    .secondPage__card3Icon2 {
+        width: 135px;
+        height: 167px;
+        left: 0;
+        top: 0;
+    }
+
+    .secondPage__bottomFrame {
+        height: auto;
+        padding: 32px;
+        justify-content: initial;
+        gap: 30px;
+        flex-direction: column;
+        margin-top: 20px;
+    }
+
+    .secondPage__bottomFrameLeftBlock {
+        max-width: 533px;
+    }
+
+    .secondPage__bottomFrameRightBlock {
+        height: 145px;
+    }
+
+    .secondPage__bottomFrameButton {
+        box-sizing: border-box;
+        width: 100%;
+        text-align: center;
+    }
+
+    .secondPage__bottomFrameImgContainer {
+        top: 0;
+        left: 20vw;
+    }
 }
 
 @media (max-width: 720px) {
@@ -1430,7 +1542,7 @@ input[type=range]::-webkit-slider-thumb {
     }
 
     .content {
-        padding: 0 28px;
+        padding: 0 30px;
     }
 
     .mainPage__title {
@@ -1487,5 +1599,126 @@ input[type=range]::-webkit-slider-thumb {
 
     .mainPage__circle {
         top: 450px;
+    }
+
+    .secondPage__title {
+        font-size: 26px;
+        max-width: 340px;
+        margin: 0 auto;
+    }
+
+    .secondPage__subtitle {
+        font-size: 26px;
+        width: 269px;
+        height: 47px;
+    }
+
+    .secondPage__card {
+        padding: 16px;
+        flex-direction: column;
+        gap: 24px;
+        width: 300px;
+        margin: 0 auto;
+    }
+
+    .secondPage__cardTitle {
+        font-size: 14px;
+    }
+
+    .secondPage__cardNumber {
+        font-size: 40px;
+    }
+
+    .secondPage__cardDesc {
+        font-size: 14px;
+    }
+
+    .secondPage__card1Icon1 {
+        width: 98px;
+        height: 98px;
+        top: 18px;
+        right: 26px;
+    }
+
+    .secondPage__card1Icon2 {
+        width: 80px;
+        height: 80px;
+        bottom: 24px;
+        left: 61px;
+    }
+
+    .secondPage__card1Icon3 {
+        width: 54px;
+        height: 54px;
+        top: 63px;
+        left: 24px;
+    }
+
+    .secondPage__card2Icon1 {
+        width: 101px;
+        height: 150px;
+        bottom: 0;
+        right: 0;
+    }
+
+    .secondPage__card2Icon2 {
+        width: 96px;
+        height: 150px;
+        top: 0;
+        left: 66px;
+    }
+
+    .secondPage__card2Icon3 {
+        width: 93px;
+        height: 150px;
+        left: 0;
+        bottom: 0;
+    }
+
+    .secondPage__card3Icon1 {
+        width: 131px;
+        height: 134px;
+        right: 0;
+        bottom: 0;
+    }
+
+    .secondPage__card3Icon2 {
+        width: 131px;
+        height: 162px;
+        left: 0;
+        top: 0;
+    }
+
+    .secondPage__cardInfoContainer {
+        width: 100%;
+    }
+
+    .secondPage__bottomFrameTitle {
+        font-size: 20px;
+        line-height: 25px;
+    }
+
+    .secondPage__bottomFrameDesc {
+        font-size: 20px;
+        line-height: 25px;
+        width: 288px;
+        height: 33px;
+    }
+
+    .secondPage__bottomFrame {
+        padding: 16px;
+        width: 300px;
+        box-sizing: border-box;
+        margin: 20px auto 0 auto;
+    }
+
+    .secondPage__bottomFrameRightBlock {
+        height: 110px;
+    }
+
+    .secondPage__bottomFrameImgContainer {
+        transform: scale(0.75);
+        top: -10px;
+        left: 10%;
     }
 }
