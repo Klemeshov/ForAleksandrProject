@@ -63,6 +63,7 @@ document.addEventListener("DOMContentLoaded", () => {
 });
 const min = (a, b) => a > b ? b : a;
 
+let lastPosTop = 0;
 
 window.addEventListener('scroll', () => {
     const posTop = (window.pageYOffset !== undefined) ? window.pageYOffset : (document.documentElement || document.body.parentNode || document.body).scrollTop;
@@ -79,16 +80,15 @@ window.addEventListener('scroll', () => {
     if (Icons) {
         Icons.style.transform = `translate(0, ${min(posTop / 4, 200)}px)`;
     }
-})
-
-window.addEventListener('wheel', (e) => {
-    const isTop = e.deltaY < 0;
-    if (Header)
+    if (Header) {
+        const isTop = posTop < lastPosTop;
         if (isTop) {
             Header.className = 'header header__show';
         } else {
             Header.className = 'header';
         }
+    }
+    lastPosTop = posTop;
 })
 
 let CardsCreatedValue = 50;
