@@ -12,29 +12,47 @@
 </head>
 <body>
 <header id="header" class="header header__show">
-    <div class="content">
-        <div class="header__content">
-            <div class="header__logo">
-                <div class="header__logoFont wordСard">card</div>
-                <div class="header__logoFont wordSon">son</div>
-            </div>
-            <div class="header__nav">
-                <a href="#secondPage" class="header__link">О проекте</a>
-                <a href="#thirdPage" class="header__link">Как работает?</a>
-                <a href="#incomeContainer" class="header__link">Калькулятор</a>
-                <a href="#lastPage" class="header__link">Наши авторы</a>
-            </div>
-            <a href="#form" class="header__registrationButton">
-                Регистрация
-            </a>
+    <div class="header__content">
+        <div class="header__logo">
+            <div class="header__logoFont wordСard">card</div>
+            <div class="header__logoFont wordSon">son</div>
         </div>
+        <div class="header__nav mediaHidden">
+            <a href="#secondPage" class="header__link">О проекте</a>
+            <a href="#thirdPage" class="header__link">Как работает?</a>
+            <a href="#incomeContainer" class="header__link">Калькулятор</a>
+            <a href="#lastPage" class="header__link">Наши авторы</a>
+        </div>
+        <a href="#form" class="header__registrationButton mediaHidden">
+            Регистрация
+        </a>
+        <img src="assets/svg/menu.svg" class="mediaShow header__menu" onclick="openModal()" alt="menu"/>
     </div>
 </header>
+<div id="modalBg" class="modalBg"></div>
+<div id="modal" class="modal">
+    <div class="modal__head">
+        <div class="header__logo">
+            <div class="header__logoFont wordСard">card</div>
+            <div class="header__logoFont wordSon">son</div>
+        </div>
+        <img src="assets/svg/arrow_back.svg" class="header__menu" alt="close" onclick="closeModal()"/>
+    </div>
+    <div class="modal__links">
+        <a onclick="closeModal()" href="#secondPage" class="header__link">О проекте</a>
+        <a onclick="closeModal()" href="#thirdPage" class="header__link">Как работает?</a>
+        <a onclick="closeModal()" href="#incomeContainer" class="header__link">Калькулятор</a>
+        <a onclick="closeModal()" href="#lastPage" class="header__link">Наши авторы</a>
+    </div>
+    <a onclick="closeModal()" href="#form" class="header__registrationButton modal__button">
+        Регистрация
+    </a>
+</div>
 <div class="rootContainer">
     <div id="whiteBlock" class="whiteBlock"></div>
     <div id="mainPage" class="mainPage">
         <div class="mainPage__backgroundTips">
-            <div id="stickers" class="mainPage__cards">
+            <div id="stickers" class="mainPage__cards mediaPhoneHidden">
                 <div class="sticker mainPage__sticker1">
                     <img src="assets/svg/sticker1.svg" alt="стикер"/>
                 </div>
@@ -42,21 +60,21 @@
                     <img src="assets/svg/sticker2.svg" alt="стикер"/>
                 </div>
             </div>
-            <div id="icons" class="mainPage__cards">
+            <div id="icons" class="mainPage__cards mediaPhoneHidden">
                 <div class="mainPage__icon1 icon">
                     <img class="icon_img" src="assets/images/icon_1.png" alt="иконка"/>
                 </div>
-                <div class="mainPage__icon2 icon">
+                <div class="mainPage__icon2 icon mediaHidden">
                     <img class="icon_img" src="assets/images/icon_2.png" alt="иконка"/>
                 </div>
                 <div class="mainPage__icon3 icon">
                     <img class="icon_img" src="assets/images/icon_3.png" alt="иконка"/>
                 </div>
-                <div class="mainPage__icon4 icon">
+                <div class="mainPage__icon4 icon mediaHidden">
                     <img class="icon_img" src="assets/images/icon_4.png" alt="иконка"/>
                 </div>
             </div>
-            <div id="cards" class="mainPage__cards">
+            <div id="cards" class="mainPage__cards mediaHidden">
                 <div class="mainPage__card1 card">
 
                     <div class="card__imageContainer"></div>
@@ -119,7 +137,7 @@
 
         <div class="content mainPage__content">
             <h1 class="mainPage__title">
-                Зарабатывать на своих идеях
+                Зарабатывать<br/> на своих идеях
             </h1>
             <div class="mainPage__lastWordContainer">
                 <div id="lastWordBorder" class="mainPage__titleLastWord mainPage__borderLastWord"></div>

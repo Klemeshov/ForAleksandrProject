@@ -12,6 +12,8 @@ let NumberOfCards;
 let LeftArrow;
 let RightArrow;
 let Header;
+let Modal
+let ModalBg
 
 document.addEventListener("DOMContentLoaded", () => {
     Circle = document.getElementById('circle');
@@ -27,6 +29,8 @@ document.addEventListener("DOMContentLoaded", () => {
     LeftArrow = document.getElementById('leftArrow');
     RightArrow = document.getElementById('rightArrow');
     Header = document.getElementById('header');
+    Modal = document.getElementById('modal');
+    ModalBg = document.getElementById('modalBg');
     LastPageCards = document.getElementsByClassName('lastPage__card');
     const inputs = document.querySelectorAll("input");
     inputs.forEach(input => {
@@ -79,11 +83,12 @@ window.addEventListener('scroll', () => {
 
 window.addEventListener('wheel', (e) => {
     const isTop = e.deltaY < 0;
-    if (isTop) {
-        Header.className = 'header header__show';
-    } else {
-        Header.className = 'header';
-    }
+    if (Header)
+        if (isTop) {
+            Header.className = 'header header__show';
+        } else {
+            Header.className = 'header';
+        }
 })
 
 let CardsCreatedValue = 50;
@@ -164,4 +169,17 @@ const onMinus = () => {
             isAnimation = false
         }, 400);
     }
+}
+
+
+const openModal = () => {
+    Modal.style.right = '0';
+    ModalBg.style.opacity = '0.5';
+    ModalBg.style.pointerEvents = 'auto';
+}
+
+const closeModal = () => {
+    Modal.style.right = '-350px';
+    ModalBg.style.opacity = '0';
+    ModalBg.style.pointerEvents = 'none';
 }
