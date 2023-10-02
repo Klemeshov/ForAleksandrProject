@@ -11,6 +11,7 @@ let LastPageCards;
 let NumberOfCards;
 let LeftArrow;
 let RightArrow;
+let Header;
 
 document.addEventListener("DOMContentLoaded", () => {
     Circle = document.getElementById('circle');
@@ -25,6 +26,7 @@ document.addEventListener("DOMContentLoaded", () => {
     NumberOfCards = document.getElementById('numberOfCards');
     LeftArrow = document.getElementById('leftArrow');
     RightArrow = document.getElementById('rightArrow');
+    Header = document.getElementById('header');
     LastPageCards = document.getElementsByClassName('lastPage__card');
     const inputs = document.querySelectorAll("input");
     inputs.forEach(input => {
@@ -62,7 +64,7 @@ window.addEventListener('scroll', () => {
     const posTop = (window.pageYOffset !== undefined) ? window.pageYOffset : (document.documentElement || document.body.parentNode || document.body).scrollTop;
 
     if (Circle) {
-        Circle.style.transform = `scale(${1 + min(posTop / 500, 1.5)})`;
+        Circle.style.transform = `scale(${1 + min(posTop / 400, 1.5)})`;
     }
     if (Window) {
         Window.style.transform = `translate(0, -${min(posTop / 3, 400)}px)`;
@@ -72,6 +74,15 @@ window.addEventListener('scroll', () => {
     }
     if (Icons) {
         Icons.style.transform = `translate(0, ${min(posTop / 4, 200)}px)`;
+    }
+})
+
+window.addEventListener('wheel', (e) => {
+    const isTop = e.deltaY < 0;
+    if (isTop) {
+        Header.className = 'header header__show';
+    } else {
+        Header.className = 'header';
     }
 })
 
