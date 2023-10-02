@@ -212,7 +212,7 @@ input[type=range]::-webkit-slider-thumb {
 
 .mainPage__description {
     width: 450px;
-    margin-top: 30px;
+    margin-top: 45px;
 
     font-size: 18px;
     font-style: normal;
@@ -368,6 +368,11 @@ input[type=range]::-webkit-slider-thumb {
 .sticker {
     position: absolute;
     z-index: -100;
+}
+
+.sticker__img {
+    height: inherit;
+    width: inherit;
 }
 
 .mainPage__sticker1 {
@@ -1382,9 +1387,14 @@ input[type=range]::-webkit-slider-thumb {
         right: 10%;
     }
 
+    .sticker {
+        width: 108px;
+        height: 108px;
+    }
+
     .mainPage__sticker1 {
         top: 238px;
-        left: 5%;
+        left: 2%;
     }
 
     .mainPage__sticker2 {
@@ -1414,7 +1424,7 @@ input[type=range]::-webkit-slider-thumb {
     }
 }
 
-@media (max-width: 620px) {
+@media (max-width: 720px) {
     .mediaPhoneHidden {
         display: none;
     }
@@ -1451,6 +1461,7 @@ input[type=range]::-webkit-slider-thumb {
         font-style: normal;
         font-weight: 400;
         line-height: 18.9px;
+        margin-top: 36px;
     }
 
     .mainPage__button {
