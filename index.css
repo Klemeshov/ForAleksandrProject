@@ -1541,6 +1541,10 @@ input[type=range]::-webkit-slider-thumb {
         display: none;
     }
 
+    .header {
+        margin: 24px 17px 0 17px;
+    }
+
     .content {
         padding: 0 30px;
     }
@@ -1611,6 +1615,7 @@ input[type=range]::-webkit-slider-thumb {
         font-size: 26px;
         width: 269px;
         height: 47px;
+        margin: 4px auto 36px auto;
     }
 
     .secondPage__card {
@@ -1623,6 +1628,7 @@ input[type=range]::-webkit-slider-thumb {
 
     .secondPage__cardTitle {
         font-size: 14px;
+        line-height: 19px;
     }
 
     .secondPage__cardNumber {
@@ -1691,6 +1697,7 @@ input[type=range]::-webkit-slider-thumb {
 
     .secondPage__cardInfoContainer {
         width: 100%;
+        gap: 4px;
     }
 
     .secondPage__bottomFrameTitle {
@@ -1703,6 +1710,7 @@ input[type=range]::-webkit-slider-thumb {
         line-height: 25px;
         width: 288px;
         height: 33px;
+        left: -8px;
     }
 
     .secondPage__bottomFrame {
