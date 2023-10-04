@@ -312,7 +312,7 @@
         <div class="content">
             <h2 class="videoPage__title">О компании «CARDSON»</h2>
             <h4 class="videoPage__desc">Видео основателя компании Михаила Сниткова</h4>
-            <video class="videoPage__video" src="https://cardson.ru/wa-content/video.mp4" width="1160" height="652"
+            <video class="videoPage__video" src="https://cardson.ru/wa-content/video.mp4" width="100%"
                    controls="controls">
                 Ваш браузер не поддерживает видео
             </video>
@@ -330,7 +330,9 @@
                     Количество созданных карточек
                 </div>
                 <div class="videoPage__cardsCreatedRange range">
-                    <span id="cardCreatedNumber" class="range__value">50</span>
+                    <div class="range__valueContainer">
+                        <span id="cardCreatedNumber" class="range__value">50</span>
+                    </div>
                     <input oninput="onCardsCreatedChange(this)" type="range" min="1" max="100" value="50"/>
                     <div class="range__infoContainer">
                         <span>1</span>
@@ -344,7 +346,9 @@
                     С одной карточки вы получаете ~70 рублей
                 </div>
                 <div class="videoPage__cardsCreatedRange range">
-                    <span id="numberOfSales" class="range__value">75</span>
+                    <div class="range__valueContainer">
+                        <span id="numberOfSales" class="range__value">75</span>
+                    </div>
                     <input oninput="onNumberOfSalesChange(this)" type="range" min="1" max="150" value="75"/>
                     <div class="range__infoContainer">
                         <span>1</span>

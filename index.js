@@ -108,7 +108,7 @@ const onCardsCreatedChange = (element) => {
     CardsCreatedValue = element.value;
     onParametersChange();
     CardCreatedNumber.innerText = element.value;
-    CardCreatedNumber.style.left = `${3 + (element.value - 1) * 7.31}px`;
+    CardCreatedNumber.style.left = `${(element.value - 1) / 0.99}%`;
 }
 
 const onNumberOfSalesChange = (element) => {
@@ -116,7 +116,7 @@ const onNumberOfSalesChange = (element) => {
     NumberOfSalesValue = element.value;
     onParametersChange();
     NumberOfSales.innerText = element.value;
-    NumberOfSales.style.left = `${3 + (element.value - 1) * 4.857}px`;
+    NumberOfSales.style.left = `${(element.value - 1) / 1.49}%`;
 }
 
 let index = 0;

@@ -845,9 +845,16 @@ input[type=range]::-webkit-slider-thumb {
     width: 100%;
 }
 
-.range__value {
+.range__valueContainer {
     position: relative;
-    left: 361.19px;
+    height: 26px;
+    margin: 0 auto 9px 4px;
+    width: calc(100% - 40px);
+}
+
+.range__value {
+    position: absolute;
+    left: 49.5%;
     width: fit-content;
     border-radius: 8px;
     background-color: #E6E9EB;
@@ -855,7 +862,6 @@ input[type=range]::-webkit-slider-thumb {
     color: #051822;
     font-size: 14px;
     font-weight: 400;
-    margin-bottom: 9px;
 }
 
 .range__infoContainer {
@@ -1534,6 +1540,11 @@ input[type=range]::-webkit-slider-thumb {
         top: 0;
         left: 20vw;
     }
+
+    .videoPage__incomeContainer {
+        padding: 32px;
+        border-radius: 24px;
+    }
 }
 
 @media (max-width: 720px) {
@@ -1795,9 +1806,90 @@ input[type=range]::-webkit-slider-thumb {
         right: 24px;
     }
 
+    .videoPage {
+        padding-bottom: 96px;
+    }
+
     .videoPage__topBorder {
         height: 48px;
         top: -48px;
         border-radius: 32px 32px 0 0;
+    }
+
+    .videoPage__title {
+        font-size: 26px;
+        max-width: 300px;
+    }
+
+    .videoPage__desc {
+        font-size: 14px;
+        line-height: 19px;
+        margin-bottom: 20px;
+    }
+
+    .videoPage__incomeTitleContainer {
+        margin: 32px auto 24px auto;
+        flex-direction: column;
+    }
+
+    .videoPage__incomeTitle {
+        font-size: 26px;
+    }
+
+    .videoPage__fingers {
+        width: 140px;
+        height: 47px;
+        font-size: 26px;
+    }
+
+    .videoPage__incomeContainer {
+        padding: 16px;
+        border-radius: 16px;
+    }
+
+    .videoPage__cardsCreatedTitle {
+        font-size: 20px;
+        line-height: 25px;
+    }
+
+    .videoPage__cardsCreatedRange {
+        margin-top: 10px;
+    }
+
+    .videoPage__numberOfSalesTitle {
+        font-size: 20px;
+        line-height: 25px;
+        margin-top: 20px;
+    }
+
+    .videoPage__incomeInfo {
+        font-size: 20px;
+        line-height: 25px;
+        margin-top: 20px;
+    }
+
+    .videoPage__income {
+        margin-top: 5px;
+        font-size: 26px;
+        width: 146px;
+        height: 47px;
+        left: -10px;
+    }
+
+    .range__value {
+        font-size: 12px;
+        padding: 2px 6px;
+    }
+
+    .range__valueContainer {
+        height: 20px;
+        margin: 0 auto 8px 4px;
+        width: calc(100% - 36px);
+    }
+
+    .lastPage__topBorder {
+        height: 48px;
+        top: -48px;
+        border-radius: 32px 32px 0px 0px;
     }
 }
