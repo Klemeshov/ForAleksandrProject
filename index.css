@@ -8,6 +8,12 @@
     scroll-behavior: smooth;
 }
 
+input {
+    width: 0;
+    min-width: 100%;
+    box-sizing: border-box;
+}
+
 button {
     border: none;
 }
@@ -985,6 +991,7 @@ input[type=range]::-webkit-slider-thumb {
     font-size: 20px;
     font-weight: 600;
     line-height: 27px;
+    margin-top: 24px;
 }
 
 .lastPage__cardSalary {
@@ -1047,8 +1054,8 @@ input[type=range]::-webkit-slider-thumb {
     cursor: default;
     margin: 0;
     padding: 0;
-    width: 64px;
-    height: 64px;
+    width: 48px;
+    height: 48px;
     transition: transform 0.1s;
 }
 
@@ -1058,6 +1065,10 @@ input[type=range]::-webkit-slider-thumb {
 
 .lastPage__navActive:active {
     transform: scale(0.9);
+}
+
+.lastPage__arrow {
+    width: 48px;
 }
 
 .lastPage__rightArrow {
@@ -1165,8 +1176,8 @@ input[type=range]::-webkit-slider-thumb {
     background-color: #26B0ED;
     display: grid;
     grid-template-columns: 1fr 1fr;
-    grid-template-rows: 274px 168px;
-    row-gap: 100px;
+    grid-template-rows: 274px 104px;
+    row-gap: 152px;
     grid-template-areas:
     "title form"
     "contacts form";
@@ -1545,6 +1556,73 @@ input[type=range]::-webkit-slider-thumb {
         padding: 32px;
         border-radius: 24px;
     }
+
+    .lastPage__card {
+        width: 620px;
+        padding: 24px;
+    }
+
+    .videoPage__video {
+        border-radius: 24px;
+    }
+
+    .lastPage__cardsContainer {
+        width: 668px;
+        margin: 0 auto;
+        gap: 18px;
+        margin-bottom: 124px;
+    }
+
+    .lastPage__nav, .lastPage__arrow {
+        width: 64px;
+        height: 64px;
+    }
+
+    .lastPage__navPanel {
+        box-sizing: border-box;
+        padding: 0 32px;
+        width: 644px;
+        left: calc(50% - 644px / 2);
+        top: 456px;
+        justify-content: space-between;
+    }
+
+    .lastPage__imagesContainer {
+        display: grid;
+        grid-template-columns: 300px 300px;
+        grid-template-rows: 300px 176px 300px 300px 306px;
+        gap: 24px 20px;
+        grid-template-areas:
+    "product1 product2"
+    "product1 product5"
+    "product4 product5"
+    "product6 product7"
+    "info info";
+        width: fit-content;
+        margin: 0 auto;
+    }
+
+    .lastPage__infoContainer {
+        padding: 36px 32px;
+    }
+
+    .form__formContainer {
+        padding: 24px;
+        border-radius: 24px;
+        grid-template-columns: 1fr;
+        grid-template-rows: auto;
+        row-gap: 32px;
+        grid-template-areas:
+    "title"
+    "form"
+    "contacts";
+    }
+
+    .form__button {
+        margin-top: 16px;
+        width: 100%;
+        padding: 16px 0;
+    }
 }
 
 @media (max-width: 720px) {
@@ -1890,9 +1968,223 @@ input[type=range]::-webkit-slider-thumb {
         width: calc(100% - 36px);
     }
 
+    .videoPage__video {
+        border-radius: 16px;
+    }
+
     .lastPage__topBorder {
         height: 48px;
         top: -48px;
-        border-radius: 32px 32px 0px 0px;
+        border-radius: 32px 32px 0 0;
+    }
+
+    .lastPage__title {
+        font-size: 26px;
+    }
+
+    .lastPage__cardProfession {
+        font-size: 12px;
+    }
+
+    .lastPage__cardName {
+        font-size: 20px;
+        line-height: 25px;
+    }
+
+    .lastPage__cardProfit {
+        font-size: 12px;
+        margin-top: 12px;
+        line-height: normal;
+    }
+
+    .lastPage__cardSalary {
+        font-size: 20px;
+        line-height: 25px;
+
+        width: 104px;
+        height: 33px;
+        left: -8px;
+    }
+
+    .lastPage__cardAvatar {
+        width: 128px;
+        height: 128px;
+    }
+
+    .lastPage__card {
+        box-sizing: border-box;
+        padding: 16px;
+        gap: 24px;
+        height: 392px;
+        border-radius: 16px;
+        min-width: 280px;
+        width: calc(100vw - 60px);
+        flex: 0 0 auto;
+    }
+
+    .lastPage__cardDescContainer {
+        height: auto;
+        align-items: flex-start;
+    }
+
+    .lastPage__cardDesc {
+        font-size: 14px;
+        line-height: 19px;
+    }
+
+    .lastPage__navPanel {
+        width: calc(100vw - 60px);
+        left: calc(50% - 50vw + 30px);
+        top: 400px;
+        padding: 0 16px;
+        gap: 0;
+        min-width: 276px;
+    }
+
+    .lastPage__nav, .lastPage__arrow {
+        width: 36px;
+        height: 36px;
+    }
+
+    .lastPage__numberOfCard {
+        font-size: 20px;
+        line-height: 25px;
+    }
+
+    .lastPage__cardsContainer {
+        gap: min(380px, calc(720px - 100vw));
+        margin-bottom: 84px;
+    }
+
+    .lastPage__cardTopInfo {
+        gap: 16px;
+    }
+
+    .lastPage__button {
+        margin-bottom: 36px;
+    }
+
+    .lastPage__alreadyCreatingTitle {
+        font-size: 26px;
+        max-width: 232px;
+        margin: 0 auto 20px auto;
+    }
+
+    .lastPage__imagesContainer {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: auto;
+        gap: 20px 12px;
+        width: 100%;
+        margin: 0 auto;
+    }
+
+    .lastPage__productImg {
+        width: 100%;
+        height: auto;
+    }
+
+    .lastPage__infoContainer {
+        padding: 16px;
+    }
+
+    .lastPage__infoText {
+        font-size: 20px;
+        line-height: 25px;
+        max-width: 250px;
+    }
+
+    .lastPage__infoWrapped {
+        font-size: 20px;
+        line-height: 25px;
+        width: 213px;
+        height: 33px;
+        left: -8px;
+    }
+
+    .lastPage__form {
+        margin-top: 36px;
+        margin-bottom: 36px;
+    }
+
+    .form__formContainer {
+        padding: 16px;
+        gap: 24px;
+        border-radius: 16px;
+    }
+
+    .form__titleContainer {
+        gap: 8px;
+    }
+
+    .form__title {
+        font-size: 26px;
+    }
+
+    .form__desc {
+        font-size: 20px;
+        line-height: 25px;
+    }
+
+    .form__topContainer {
+        flex-direction: column;
+        gap: 8px;
+    }
+
+    .form__registration {
+        width: auto;
+        font-size: 20px;
+        line-height: 25px;
+    }
+
+    .form__input {
+        font-weight: 400;
+    }
+
+    .form__inputsContainer {
+        gap: 8px;
+        margin-top: 12px;
+    }
+
+    .form__footerText {
+        font-size: 12px;
+    }
+
+    .form__requiredInfo {
+        font-size: 12px;
+    }
+
+    .form__contactsTitle {
+        font-size: 20px;
+        line-height: 25px;
+        width: 111px;
+        height: 33px;
+        left: -8px;
+    }
+
+    .form__contact {
+        font-size: 20px;
+        line-height: 25px;
+    }
+
+    .footer__content {
+        padding: 24px 0;
+        flex-direction: column;
+        align-items: center;
+        gap: 12px;
+    }
+
+    .form__registrationInfo {
+        font-size: 12px;
+        line-height: normal;
+    }
+
+    .form {
+        border-radius: 16px;
+        padding: 12px;
+    }
+
+    .form__button {
+        padding: 16px 0;
     }
 }
