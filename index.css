@@ -1635,6 +1635,7 @@ input[type=range]::-webkit-slider-thumb {
 
     .secondPage__card {
         padding: 16px;
+        border-radius: 16px;
         flex-direction: column;
         gap: 24px;
         width: 300px;
@@ -1772,6 +1773,7 @@ input[type=range]::-webkit-slider-thumb {
     .thirdPage__cardContainer {
         padding: 16px;
         gap: 4px;
+        border-radius: 16px;
     }
 
     .thirdPage__cardTitle {
@@ -1829,6 +1831,7 @@ input[type=range]::-webkit-slider-thumb {
 
     .videoPage__incomeTitleContainer {
         margin: 32px auto 24px auto;
+        gap: 6px;
         flex-direction: column;
     }
 
