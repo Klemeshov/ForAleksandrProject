@@ -1031,8 +1031,8 @@ input[type=range]::-webkit-slider-thumb {
 
 .lastPage__navPanel {
     position: absolute;
-    top: 0;
-    right: 0;
+    bottom: 376px;
+    right: 32px;
     display: flex;
     gap: 245px;
     align-items: center;
@@ -1574,7 +1574,6 @@ input[type=range]::-webkit-slider-thumb {
         width: 668px;
         margin: 0 auto;
         gap: 18px;
-        margin-bottom: 124px;
     }
 
     .lastPage__nav, .lastPage__arrow {
@@ -1583,11 +1582,11 @@ input[type=range]::-webkit-slider-thumb {
     }
 
     .lastPage__navPanel {
+        position: initial;
         box-sizing: border-box;
         padding: 0 32px;
         width: 644px;
-        left: calc(50% - 644px / 2);
-        top: 456px;
+        margin: 24px auto 60px auto;
         justify-content: space-between;
     }
 
@@ -2043,7 +2042,7 @@ input[type=range]::-webkit-slider-thumb {
         box-sizing: border-box;
         padding: 16px;
         gap: 24px;
-        height: 413px;
+        min-height: 100%;
         border-radius: 16px;
         min-width: 280px;
         width: calc(100vw - 60px);
@@ -2062,11 +2061,10 @@ input[type=range]::-webkit-slider-thumb {
 
     .lastPage__navPanel {
         width: calc(100vw - 60px);
-        left: calc(50% - 50vw + 30px);
-        top: 420px;
         padding: 0 16px;
         gap: 0;
         min-width: 276px;
+        margin: 16px auto 32px auto;
     }
 
     .lastPage__nav, .lastPage__arrow {
@@ -2081,7 +2079,7 @@ input[type=range]::-webkit-slider-thumb {
 
     .lastPage__cardsContainer {
         gap: min(380px, calc(720px - 100vw));
-        margin-bottom: 84px;
+        height: fit-content;
     }
 
     .lastPage__cardTopInfo {
