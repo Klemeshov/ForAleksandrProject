@@ -15,6 +15,8 @@ let Header;
 let Modal
 let ModalBg
 
+let startX = 0;
+
 document.addEventListener("DOMContentLoaded", () => {
     Circle = document.getElementById('circle');
     Cards = document.getElementById('cards');
@@ -60,6 +62,19 @@ document.addEventListener("DOMContentLoaded", () => {
             LastWordBorder.style.transform = `rotate(-1.8deg)`;
         }
     }, 2000)
+
+    LastPageCardsContainer.addEventListener("touchstart", (e) => {
+        startX = e.changedTouches[0].pageX
+    })
+
+    LastPageCardsContainer.addEventListener("touchend", (e) => {
+        if (e.changedTouches[0].pageX - startX < -75) {
+            onPlus();
+        }
+        if (e.changedTouches[0].pageX - startX > 75) {
+            onMinus();
+        }
+    })
 });
 const min = (a, b) => a > b ? b : a;
 
