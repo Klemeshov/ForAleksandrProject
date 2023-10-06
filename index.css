@@ -1632,6 +1632,18 @@ input[type=range]::-webkit-slider-thumb {
         width: 100%;
         padding: 16px 0;
     }
+
+    .form__topContainer {
+        gap: 16px;
+    }
+
+    .form__registration {
+        max-width: 212px;
+    }
+
+    .form__registrationInfo {
+        max-width: 296px;
+    }
 }
 
 @media (max-width: 720px) {
@@ -2147,6 +2159,7 @@ input[type=range]::-webkit-slider-thumb {
 
     .form__registration {
         width: auto;
+        max-width: initial;
         font-size: 20px;
         line-height: 25px;
     }
@@ -2192,6 +2205,7 @@ input[type=range]::-webkit-slider-thumb {
     .form__registrationInfo {
         font-size: 12px;
         line-height: normal;
+        max-width: initial;
     }
 
     .form {
